@@ -160,9 +160,9 @@ void M5WatchLcd::checkBTdata(char* chrs) {
   String text = chrs;
   text.trim();
   if (text.length() == 15) { // alarm settings
-      this->addAlarm(0, (text.substring(4) == "1" ? true : false), text.substring(0, 2).toInt(), text.substring(2, 4).toInt());
-      this->addAlarm(1, (text.substring(9) == "1" ? true : false), text.substring(5, 7).toInt(), text.substring(7, 9).toInt());
-      this->addAlarm(2, (text.substring(14) == "1" ? true : false), text.substring(10, 12).toInt(), text.substring(12, 14).toInt());
+      this->addAlarm(0, (text.substring(4, 5) == "1" ? true : false), text.substring(0, 2).toInt(), text.substring(2, 4).toInt());
+      this->addAlarm(1, (text.substring(9, 10) == "1" ? true : false), text.substring(5, 7).toInt(), text.substring(7, 9).toInt());
+      this->addAlarm(2, (text.substring(14, 15) == "1" ? true : false), text.substring(10, 12).toInt(), text.substring(12, 14).toInt());
 	  this->sendBTstate();
 	  this->resetAlarmMenu();
   } else if (text.length() == 14) { // datetime settings

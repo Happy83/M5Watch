@@ -49,6 +49,7 @@ void M5BLEinit() {
 
   pTxCharacteristic = pService->createCharacteristic(
                       CHARACTERISTIC_UUID_TX,
+                      BLECharacteristic::PROPERTY_NOTIFY | 
                       BLECharacteristic::PROPERTY_READ
                     );
                       
