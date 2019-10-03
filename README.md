@@ -12,6 +12,10 @@ Up to 8 hours with display always on.
 
 Very big potential to upgrade in the future.
 
+## Using
+
+Copy all files from directory 'library' to the directory with *.ino files.
+
 ## Mobile app
 **M5Watch.aia** is a file for a classic version of **Thunkable**. (You have to add BluetoothLE addon)
 
