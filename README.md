@@ -14,7 +14,7 @@ Very big potential to upgrade in the future.
 
 ## Using
 
-Copy all files from directory 'library' to the directory with *.ino files.
+Copy directory 'library' to your libraries directory ( e.g. c:\Users\~username~\Documents\Arduino\libraries\ )
 
 ## Mobile app
 **M5Watch.aia** is a file for a classic version of **Thunkable**. (You have to add BluetoothLE addon)
